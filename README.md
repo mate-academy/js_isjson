@@ -1,4 +1,5 @@
 # isJSON
+[link] (https://anyalisna.github.io/js_is-json/)
 
 Create a function called `isJSON` that accepts a string and returns `true` if the string is valid JSON and `false` otherwise. Sample usage:
 

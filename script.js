@@ -1,9 +1,9 @@
 function isJSON (jsonStr) {
   try {
-    const obj = JSON.parse(jsonStr);
-    console.log('true');
+    JSON.parse(jsonStr);
+    console.log(true);
   } catch (error) {
-    console.log('false');
+    console.log(false);
   }
 }
 

@@ -1,14 +1,15 @@
 function isJSON(str) {
-    let result = true;
-    try {
-      JSON.parse(str);
-    } catch(err) {
-      return !result;
+  try {
+    if (JSON.parse(str)) {
+      return true;
     }
-    return result;
+    throw new Error("false");
+  } catch (err) {
+    return err;
   }
-  
-  isJSON('{"name": "Michael", "age": 45}'); // true
-  isJSON('{name: "Michael", age: 45}'); // false
-  isJSON('false'); // true
-  isJSON('abc'); // false 
+}
+
+isJSON('{"name": "Michael", "age": 45}'); // true
+isJSON('{name: "Michael", age: 45}'); // false
+isJSON("false"); // true
+isJSON("abc"); // false

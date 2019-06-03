@@ -1,11 +1,10 @@
-function isJSON(str) {
-  let result;  
+function isJSON(str) {  
   try {
       JSON.parse(str)   
     } catch (err) {
-      return err;
+      return false;
     }
-  return !result;
+  return true;
   }
 
 isJSON('{"name": "Michael", "age": 45}'); // true

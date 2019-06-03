@@ -1,7 +1,12 @@
-const jsonPatern = /(^{("\w+":\s"?\w+"?(,\s)?)+}$|false|true)/;
+'use strict';
 
 function isJSON(str) {
-  console.log(jsonPatern.test(str));
+  try {
+    JSON.parse(str);
+  } catch(error) {
+    console.log(false);
+  }
+  console.log(true);
 }
 
 isJSON('{"name": "Michael", "age": 45}');

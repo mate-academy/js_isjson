@@ -1,11 +1,12 @@
 'use strict';
+
 function isJSON(string) {
   try {
     JSON.parse(string);
+    return true;
   } catch (error) {
     return false;
   }
-  return true;
 }
 
 isJSON('{"name": "Michael", "age": 45}');

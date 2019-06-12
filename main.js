@@ -2,7 +2,7 @@ function isJSON(str) {
   try {
       JSON.parse(str);
       console.log(true);
-  } catch (event) {
+  } catch (error) {
       console.log(false);
     }
 }

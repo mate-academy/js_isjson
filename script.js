@@ -1,7 +1,4 @@
 function isJSON(str) {
-    if (typeof text !== "string") { 
-        return false; 
-    } 
     try { 
         JSON.parse(str);         
     } catch (error) { 

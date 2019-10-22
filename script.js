@@ -1,6 +1,6 @@
 let isJSON  = function(string) {
     try {
-        JSON.parse(string)
+        JSON.parse(string);
     } catch(error) {
         return false;
     }

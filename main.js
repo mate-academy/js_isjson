@@ -1,10 +1,10 @@
 function isJson(str) {
   try {
-    if (JSON.parse(str)) {
-      return true; 
-    }
+    JSON.parse(str)
   } catch (err) {
     return false;
   }
+  
+  return true; 
 }
 

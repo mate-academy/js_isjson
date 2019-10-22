@@ -1,6 +1,6 @@
 const  isJSON = function(str) {
     try {
-        obj = JSON.parse(str);
+        JSON.parse(str);
         return true;
     } catch (e) {
         return false;
